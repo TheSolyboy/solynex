@@ -1,140 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <title>Solynex | Link Page</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="icon" id="favicon" href="images/pfp.png" type="image/x-icon" />
-    </head>
-    <body>
-        <script>
-            var displayName = "Solynex";
-
-            var profession = "17yo programmer, community manager and gym enthusiast";
-
-            var profilePicURL = "images/pfp.png";
-
-            var linkOneTitle = "Website";
-            var linkOneURL = "https://solynex.me/";
-            var linkOneIcon = "fa fa-globe";
-
-            var linkTwoTitle = "Github";
-            var linkTwoURL = "https://github.com/TheSolyboy";
-            var linkTwoIcon = "fa fa-github";
-
-            var linkThreeTitle = "YouTube";
-            var linkThreeURL = "https://www.youtube.com/@TheSolyboy";
-            var linkThreeIcon = "fa fa-youtube-play";
-
-            var linkFourTitle = "Email";
-            var linkFourURL = "mailto:solynex@solynex.me";
-            var linkFourIcon = "fa fa-envelope";
-
-            var linkFiveTitle = "Twitter";
-            var linkFiveURL = "https://x.com/soly_nex";
-            var linkFiveIcon = "fa fa-twitter";
-
-            var linkSixTitle = "💻Servers💻";
-            var linkSixURL = "#";
-            var linkSixIcon = "fa fa-tiktok";
-            var linkSixBackgroundColor = "transparent";
-
-            var linkSevenTitle = "GorillaLifts";
-            var linkSevenURL = "https://discord.gg/gorilla-lifts";
-            var linkSevenIcon = "fa fa-tiktok";
-
-            var linkEightTitle = "SmellowsProject";
-            var linkEightURL = "https://discord.gg/U8tZu37KYY";
-            var linkEightIcon = "fa fa-tiktok";
-
-            var linkNineTitle = "🤖My Bots🤖";
-            var linkNineURL = "#";
-            var linkNineIcon = "fa fa-tiktok";
-            var linkNineBackgroundColor = "transparent";
-
-            var linkTenTitle = "CryptoNews";
-            var linkTenURL = "https://cryptonews.chat/";
-            var linkTenIcon = "fa fa-tiktok";
-
-            var linkElevenTitle = "Bitara";
-            var linkElevenURL = "https://bitara.org/";
-            var linkElevenIcon = "fa fa-tiktok";
-
-        </script>
-        <div id="profile"></div>
-        <div id="links">
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkOne">
-                <i class="" id="iconOne"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkTwo">
-                <i class="" aria-hidden="true" id="iconTwo"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkThree">
-                <i class="" aria-hidden="true" id="iconThree"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkSix">
-                <i class="" aria-hidden="true" id="iconSix"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkSeven">
-                <i class="" aria-hidden="true" id="iconSeven"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkEight">
-                <i class="" aria-hidden="true" id="iconEight"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkNine">
-                <i class="" aria-hidden="true" id="iconNine"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkTen">
-                <i class="" aria-hidden="true" id="iconTen"></i>
-            </a>
-            <a class="link" href="#" target="_blank" rel="noopener" id="linkEleven">
-                <i class="" aria-hidden="true" id="iconEleven"></i>
-            </a>
-        </div>
-        <p id="credit"></p>
-        <script>
-            // Update page with variables
-            document.querySelector("title").innerHTML = displayName + " | Link Page";
-            document.getElementById("profile").innerHTML = "<img id='userPhoto' src='" + profilePicURL + "' alt='" + displayName + "'s Profile Picture'><div id='userName'><h1 id='usersName'>" + displayName + "</h1><p id='usersProfession'>" + profession + "</p></div>"
-            document.getElementById("favicon").href = profilePicURL;
-
-            document.getElementById("linkOne").href = linkOneURL;
-            document.getElementById("linkOne").innerHTML = "<i class='" + linkOneIcon + "' id='iconOne'></i> " + linkOneTitle;
-
-            document.getElementById("linkTwo").href = linkTwoURL;
-            document.getElementById("linkTwo").innerHTML = "<i class='" + linkTwoIcon + "' id='iconTwo'></i> " + linkTwoTitle;
-
-            document.getElementById("linkThree").href = linkThreeURL;
-            document.getElementById("linkThree").innerHTML = "<i class='" + linkThreeIcon + "' id='iconThree'></i> " + linkThreeTitle;
-
-            document.getElementById("linkSix").href = linkSixURL;
-            document.getElementById("linkSix").style.backgroundColor = linkSixBackgroundColor;
-            document.getElementById("linkSix").style.color = "black";
-            document.getElementById("linkSix").style.textDecoration = "none";
-            document.getElementById("linkSix").innerHTML = "<i class='" + linkSixIcon + "' id='iconSix'></i> " + linkSixTitle;
-
-            document.getElementById("linkSeven").href = linkSevenURL;
-            document.getElementById("linkSeven").innerHTML = "<i class='" + linkSevenIcon + "' id='iconSeven'></i> " + linkSevenTitle;
-
-            document.getElementById("linkEight").href = linkEightURL;
-            document.getElementById("linkEight").innerHTML = "<i class='" + linkEightIcon + "' id='iconEight'></i> " + linkEightTitle;
-
-            document.getElementById("linkNine").href = linkNineURL;
-            document.getElementById("linkNine").style.backgroundColor = linkNineBackgroundColor;
-            document.getElementById("linkNine").style.color = "black";
-            document.getElementById("linkNine").style.textDecoration = "none";
-            document.getElementById("linkNine").innerHTML = "<i class='" + linkNineIcon + "' id='iconNine'></i> " + linkNineTitle;
-
-            document.getElementById("linkTen").href = linkEightURL;
-            document.getElementById("linkTen").innerHTML = "<i class='" + linkTenIcon + "' id='iconTen'></i> " + linkTenTitle;
-
-            document.getElementById("linkEleven").href = linkElevenURL;
-            document.getElementById("linkEleven").innerHTML = "<i class='" + linkElevenIcon + "' id='iconEleven'></i> " + linkElevenTitle;
-
-        document.getElementById("credit").style = "display: none;"
-            
-        </script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚧 Site Under Maintenance 🚧</h1>
+        <p>We’re making some improvements. Please check back soon.</p>
+    </div>
+</body>
 </html>
