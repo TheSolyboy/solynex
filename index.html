@@ -2,44 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 16px;
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Solynex</title>
 </head>
 <body>
-    <div class="container">
-        <h1>🚧 Site Under Maintenance 🚧</h1>
-        <p>We’re making some improvements. Please check back soon.</p>
+<!-- Navigation Bar -->
+<nav class="uk-navbar-container uk-navbar-transparent uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-dark">Solynex.</a>
     </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-dark">
+            <li><a class="uk-button-text uk-text-capitalize" style="color: #000000;" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" style="color: #000000;" href="#projects" uk-scroll>Projects</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" style="color: #000000;" href="mailto:solynex@solynex.me">Contact</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" style="color: #000000;" href="http://solynex.me/bio" target="_blank">Links</a></li>
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Solynex.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+            <li class="uk-active"><a href="mailto:soynex@solynex.me">Contact</a></li>
+            <li class="uk-active"><a href="http://solynex.me/bio">Links</a></li>
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-text-left uk-margin-xlarge-right" style="color: black;">I'm solynex, a 17yo from norway.</h1>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button" style="background-color: #3c4f6c; color: white;" uk-scroll>About Me</a>
+</section>
+<br>
+
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left">About Me</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">I am a 17 year old male from Norway, currently in my first year studying IT and coding.. </p>
+<a href="https://www.instagram.com/solve_hg" class="uk-margin-xlarge-left uk-button-text" uk-icon="instagram" style="color: black;" target="_blank"></a> &nbsp;
+<a href="" class="uk-button-text" uk-icon="dribbble" style="color: black;" target="_blank"></a> &nbsp;
+<a href="https://github.com/TheSolyboy" class="uk-button-text" uk-icon="github" style="color: black;" target="_blank"></a> &nbsp;
+<a href="" class="uk-button-text" uk-icon="linkedin" style="color: black;" target="_blank"></a>
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h3 class="uk-margin-xlarge-left" style="color: black;">Projects</h3>
+    <p class="uk-margin-xlarge-left">Projects that I've am/been working on</p>
+
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+        <!-- Smellows Project -->
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-flex" style="background-color: #3c4f6c;">
+            <img src="images/smlo.png" alt="Smellows Project" style="width: 100px; height: auto; max-width: 100%; margin-right: 20px; object-fit: contain;">
+            <div>
+                <h4>Smellows Project</h4>
+                <p>Smellow’s Project is an innovative platform merging art, technology, and cryptocurrency into a unified ecosystem. The vision of our Project revolves around bringing together NFT enthusiasts, crypto lovers, and curious newcomers to engage in a thriving, community-driven space.</p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://smellowsproject.com/" target="_blank">
+                    <span uk-icon="icon: link"></span> Website Link
+                </a>
+            </div>
+        </div>
+
+        <!-- GorillaLifts -->
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-flex" style="background-color: #3c4f6c;">
+            <img src="images/grr.png" alt="GorillaLifts" style="width: 100px; height: auto; max-width: 100%; margin-right: 20px; object-fit: contain;">
+            <div>
+                <h4>GorillaLifts</h4>
+                <p>A judgment-free fitness hub where lifters of all levels unite and thrive.</p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://gorillalifts.org" target="_blank">
+                    <span uk-icon="icon: link"></span> Website Link
+                </a>
+            </div>
+        </div>
+
+        <!-- CryptoNews -->
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-flex" style="background-color: #3c4f6c;">
+            <img src="images/cryptonews.png" alt="CryptoNews" style="width: 100px; height: auto; max-width: 100%; margin-right: 20px; object-fit: contain;">
+            <div>
+                <h4>CryptoNews</h4>
+                <p>CryptoNews sends crypto news, market updates and airdrop alerts to your server.</p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://cryptonews.chat/" target="_blank">
+                    <span uk-icon="icon: link"></span> Website Link
+                </a>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-flex" style="background-color: #3c4f6c;">
+            <img src="images/arrow.png" alt="Arrow" style="width: 100px; height: auto; max-width: 100%; margin-right: 20px; object-fit: contain;">
+            <div>
+                <h4>Arrow</h4>
+                <p>Arrow is designed to be the ultimate workout companion. Our completely free base version allows you to elevate your workout experience and gain valuable insight to your fitness activities, with our VIP membership taking it a few steps further.</p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://www.arrowfitnessapp.com/" target="_blank">
+                    <span uk-icon="icon: link"></span> Website Link
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<!-- Projects Section Ends -->
+    
 </body>
 </html>
